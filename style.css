@@ -1,0 +1,362 @@
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(21, 72, 148);
+    justify-content: center;
+    align-items: center;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(backgroun.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.album-container {
+    margin: 80px;
+    align-content: center;
+    margin-top: 10px;
+
+}
+@font-face {
+    font-family: stardew;
+    src: url(Stardew_Valley.ttf);
+}
+.heading{
+    text-align: center;
+    position: relative;
+    top: -36px;
+    font-size: 30px;
+    font-family: 'stardew';
+}
+h2
+{
+    font-family: stardew;
+    font-size: 30px;
+
+}
+h1 {
+    text-align: center;
+    margin: 1px;
+    font-family: stardew;
+    font-size: 46px;
+    color: #42312d;
+}
+.container
+{    bottom: 42px;
+    width: 80;
+    position: relative;
+    margin: 50px;
+    margin-right: 78 -px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 26px;
+}
+
+.farm{
+    background-image: url(farm.png);
+    width: 100%;
+    height: 500px;
+    top: 620px;
+    position: relative;
+    
+}
+   
+
+
+.text
+{
+    
+    width: 950px;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 150px;
+    top: 100px;
+    left: 268px;
+    padding: 40px;
+}
+
+.clouds
+{
+    background-image: url(clouds.png);
+    width: 100%;
+    height: 700px;
+    position: relative;
+    animation-name: slideleft  ;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    bottom: 786px;
+    background-repeat: space;
+    animation-direction: reverse;
+    opacity: 20%;
+
+   
+}
+
+.btn
+{
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    bottom: 69px;
+    left: 706px;
+    padding: 15px 32px;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: stardew;
+    text-size-adjust: 31px;
+    font-size: 24px;
+}
+
+.container .item1::after {
+    content: "The jingle had so many great dancers and their choreography was very creative,I was very amazed! Even though, our department did not win we enjoyed their dances, I can really see that they enjoy dancing very much!"; /* The definition text */
+    position: absolute;
+    bottom: 10px; /* Position the definition near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the definition horizontally */
+    background: rgba(0, 0, 0, 0.7); /* Background color for the definition */
+    color: white; /* Text color */
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade-in effect */
+}
+
+.container .item2::after {
+    content: "The teachers performed a very outstanding concert-like performance for us students! We were very amazed by how beautiful their voices were! They even sang great songs like Evan Essence!"; /* The definition text */
+    position: absolute;
+    bottom: 10px; /* Position the definition near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the definition horizontally */
+    background: rgba(0, 0, 0, 0.7); /* Background color for the definition */
+    color: white; /* Text color */
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade-in effect */
+}
+
+.container .item3::after {
+    content: "I was the propmaster of our department in performing the La Paroza, upon many weeks of our hardwork we get to perform the stage and was really nervous about the performance. Nevertheless, we pushed through and performed the best performance on our department yet!"; /* The definition text */
+    position: absolute;
+    bottom: 10px; /* Position the definition near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the definition horizontally */
+    background: rgba(0, 0, 0, 0.7); /* Background color for the definition */
+    color: white; /* Text color */
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade-in effect */
+}
+
+.container .item4::after {
+    content:"We performed the La Paroza! Our theme was Encanto and it was the most exciting performance, I have ever played! The dances were creative and our theme was very colorful! Our department did not win, but we had so much fun! Most of the students said that our play was the most amazing out of all"; /* The definition text */
+    position: absolute;
+    bottom: 10px; /* Position the definition near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the definition horizontally */
+    background: rgba(0, 0, 0, 0.7); /* Background color for the definition */
+    color: white; /* Text color */
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade-in effect */
+}
+
+.container .item2:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Make it visible */
+}
+
+.container .item3:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Make it visible */
+}
+
+.container .item1:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Make it visible */
+}
+p{ font-size: 20px;
+font-family: stardew;
+text-align: center;}
+.container .item4:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Make it visible */
+}
+.bird
+{
+    
+    position: absolute;
+    width: 100px;
+    pointer-events: none;
+    animation-name: slideleft;
+    background-repeat: no-repeat;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    top: 120px;
+    left: 1200px;
+}
+
+@keyframes slideleft {
+    from
+    {
+        transform: translateX(50px);
+    }
+
+    to{ 
+        transform: translateX(-1500px);
+    }
+}
+.first
+{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+}
+.secondsection
+{
+    position: relative;
+    bottom: -287px;
+    width: 100%;
+    height: 700px;
+}
+.stars
+{
+    background-image: url(stars.png);
+    width: 100%;
+    height: 500px;
+    position: relative; 
+    display: flex;
+}
+
+.clouds2
+{
+    background-image: url(cloud.png);
+    
+    width: 100%;
+    height: 650px;
+    position: relative;
+    animation-name: slideleft;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    bottom: 1218px;
+    background-repeat: space;
+    animation-direction: reverse;
+    opacity: 50%;
+    
+    
+}
+.title{
+    position: absolute;
+    height: 500px;
+    top: 83px;
+    left: 350px;
+}
+
+
+.land2{
+    background-image: url(land2.png);
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: 600px;
+}
+
+        .secondpage {
+            padding: 0;
+            width: 100%;
+            position: relative;
+            top: 845px;
+            margin: 0;
+            top: 100;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }   
+
+        .container .items{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+            border-radius: 10px;
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            padding: 0px 0px 10px 10px;
+            flex-direction:column;
+            color: whitesmoke;
+            transition: transform 0.3s ease;
+        }
+
+
+                .container .item1{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(jingle.jpg);
+                    grid-row:span 2;
+                    transition: background 0.3s ease;
+                    position: relative;
+                    text-align: center;
+                }
+
+                .container .item1:hover {
+                    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(jingle.jpg);}
+                
+                .container .item2{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(me.jpg);
+        transition: background 0.3s ease;
+        position: relative;
+                    text-align: center;
+        
+                }
+                .container .item2:hover {
+                    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(me.jpg);}
+                
+        
+                .container .item3{
+                    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(la.png);
+                    transition: background 0.3s ease;
+                    position: relative;
+                    text-align: center;
+                            }
+                            .container .item3:hover {
+                                background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(la.png);}
+                            
+                .container .item4{
+                                background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(lamparoza.jpeg);
+                                grid-column:span 2;  transition: background 0.3s ease;   position: relative;
+                                text-align: center;  }
+                                .container .item4:hover {
+                                    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(lamparoza.jpeg);}
+
+                                    .thirdpage{
+                                        background-color: #eec459;
+                                        width: 100%;
+                                        height: auto;
+                                        position: relative;
+                                        top: 787px;
+                                        padding: 100px;
+                                    }
+
+                                    
